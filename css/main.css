@@ -1,0 +1,234 @@
+* {
+    font-family: "Segoe";
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Segoe";
+    src: url(../fonts/SegoePrint.ttf)
+}
+
+.info {
+    /* width: 100%; */
+    display: grid;
+    font-size: 20px;
+    font-weight: 700;
+    /* color: rgb(234, 15, 15); */
+    color: rgb(33, 145, 37);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.informat {
+    color: black;
+}
+
+.info div {
+
+    text-align: center;
+}
+
+.info div p {
+
+    padding: 20px;
+    margin: 0;
+}
+
+.wrap {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5% 300px 25%;
+    margin-top: 20px;
+    height: 500px;
+}
+
+.wrap div {
+    align-self: center;
+    justify-self: center;
+}
+
+
+.wrapper,
+.wrapper-comp {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(6, 146, 228, 0.973);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 0;
+}
+
+.res-user,
+.res-comp {
+    margin-left: 50px;
+}
+
+
+
+.user,
+.comp {
+    display: grid;
+    grid-template-columns: 10% 300px;
+
+}
+
+.res-comp {
+    color: white;
+}
+
+.comp {
+    display: none;
+
+}
+
+.wrapper-melting {
+    font-size: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.wrapper div,
+.wrapper-comp div {
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(17, 16, 16);
+    height: 30px;
+    width: 30px;
+}
+
+
+
+.ship-sample {
+    padding-top: 30px;
+    cursor: pointer;
+    display: flex;
+    /* margin: 50px auto; */
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-items: center;
+    text-align: center;
+
+}
+
+.ship-sample div {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(6, 146, 228, 0.973);
+    border: 1px solid rgb(17, 16, 16);
+}
+
+.ship {
+    background-color: rgba(11, 110, 167, 0.973);
+}
+
+.ship-put {
+    background-color: rgb(119, 112, 112);
+}
+
+/* --------------------------- */
+.place,
+.avto,
+.manual,
+.start-games {
+    font-size: 20px;
+    padding: 7px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    /* height: 40px; */
+    width: 240px;
+    color: rgba(11, 110, 167, 0.973);
+    border: 2px solid rgba(11, 110, 167, 0.973);
+    /* background-color: black; */
+}
+
+.place:hover,
+.avto:hover,
+.start-games:hover,
+.manual:hover {
+    color: white;
+    background-color: rgba(11, 110, 167, 0.973);
+    /* ; */
+}
+
+.h-user,
+.h-comp {
+    font-weight: 700;
+    display: grid;
+
+    grid-template-columns: repeat(10, 1fr);
+
+    border: none;
+}
+
+
+
+.v-user,
+.v-comp {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.v-comp {
+    top: 0;
+    left: 670px;
+}
+
+.h-user span,
+.h-comp span,
+.v-comp span,
+.v-user span {
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+
+.got {
+    background-image: url(../img/ranuv.png);
+    background-color: rgb(119, 112, 112);
+}
+
+.miss {
+    background-image: url(../img/mimo_2.png);
+    /* background-color: red; */
+}
+
+.border-intact {
+    background-image: url(../img/none.png);
+}
+
+
+.fire {
+    animation-name: explosion;
+    animation-duration: 0.4s;
+    transform: scale(0.2);
+    background-image: url(../img/fire.png);
+
+}
+
+@keyframes explosion {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+}
